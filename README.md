@@ -1,29 +1,20 @@
-# 📡 OVH Singapore VPS Stock Notifier
+# 📡 OVH SG VPS Notifier
 
-A Node.js script that monitors OVH Singapore VPS availability and sends 5x alerts via Telegram when Linux instances are in stock.
+Simple script to monitor Singapore VPS stock on OVH and alert via Telegram.
 
----
+### 🛠️ 1. Setup Telegram
+1. Message **@BotFather** for a Token.
+2. Message your bot, then open this link (replace with your token) to find your **Chat ID**:  
+`https://api.telegram.org/botYOUR_TOKEN_HERE/getUpdates`
 
-## 🛠️ Setup Guide
+### ⚙️ 2. Setup Script
+1. Open `ovh-monitor.js` and paste your IDs:
+   - `const TELEGRAM_TOKEN = "your_token";`
+   - `const CHAT_ID = "your_id";`
 
-### 1. Create your Telegram Bot
-* Message [@BotFather](https://t.me/botfather) on Telegram and create a new bot.
-* Save the **API Token** it provides.
-
-### 2. Find your Telegram Chat ID
-1. Open a chat with your new bot and click **Start**.
-2. Go to this URL in your browser (replace `YOUR_TOKEN_HERE` with your actual token):
-   > `https://api.telegram.org/botYOUR_TOKEN_HERE/getUpdates`
-3. Look for the section: `"chat":{"id":123456789}`.
-4. The number **123456789** is your Chat ID.
-
-
-###3. Run
+### 🚀 3. How to Run
 Open your terminal in the folder and run:
 
-Bash
-
-> `npm install axios
-node ovh-monitor.js`
-Checks every 10 mins. Pings 5 times when stock is found.
-
+```bash
+npm install axios
+node ovh-monitor.js
