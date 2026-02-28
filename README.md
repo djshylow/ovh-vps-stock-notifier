@@ -27,10 +27,3 @@ Bash
 node ovh-monitor.js`
 Checks every 10 mins. Pings 5 times when stock is found.
 
-
-### Why this is better:
-* **No Git commands:** It assumes they just downloaded your file.
-* **Code Blocks:** Using the \` \` \` symbols makes the commands look like real buttons/boxes instead of a mess.
-* **Direct:** It tells them exactly where to paste the keys.
-
-**Would you like me to make a `package.json` file for you?** It lets people just ty
