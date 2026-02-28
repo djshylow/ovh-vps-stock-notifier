@@ -6,8 +6,8 @@ const sleepTime = 600000; // 10 minutes
 const planCode = "vps-2025-model1";
 const datacenterCode = "ap-southeast-sgp";
 
-const TELEGRAM_TOKEN = "8765582992:AAE59wny2-awaQUM1R8iDtbWcISI4IcC1Gw";
-const CHAT_ID = "195463429"; // your personal user ID
+const TELEGRAM_TOKEN = "";
+const CHAT_ID = ""; // your personal user ID
 
 // ---------------- FORCE IPV4 ----------------
 const agent = new https.Agent({
