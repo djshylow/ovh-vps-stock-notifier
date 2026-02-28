@@ -1,6 +1,10 @@
-# 📡 OVH SG VPS Notifier
+# 📡 OVH Singapore VPS Stock Notifier
 
-Simple script to monitor Singapore VPS stock on OVH and alert via Telegram.
+A Node.js script that monitors OVH Singapore VPS availability and sends 5x alerts via Telegram when Linux instances are in stock.
+
+---
+
+## 🛠️ Setup Guide
 
 ### 🛠️ 1. Setup Telegram
 1. Message **@BotFather** for a Token.
@@ -18,3 +22,6 @@ Open your terminal in the folder and run:
 ```bash
 npm install axios
 node ovh-monitor.js
+
+
+Checks every 10 mins. Pings 5 times when stock is found.
