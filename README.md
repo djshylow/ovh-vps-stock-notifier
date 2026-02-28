@@ -4,7 +4,7 @@ A Node.js script that monitors OVH Singapore VPS availability and sends 5x alert
 
 ---
 
-## 🛠️ Setup Guide
+##Setup Guide
 
 ### 🛠️ 1. Setup Telegram
 1. Message **@BotFather** for a Token.
