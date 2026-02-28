@@ -17,25 +17,20 @@ A Node.js script that monitors OVH Singapore VPS availability and sends 5x alert
 3. Look for the section: `"chat":{"id":123456789}`.
 4. The number **123456789** is your Chat ID.
 
-### 3. Local Installation
-**Clone the repository:**
-```bash
-git clone [https://github.com/djshylow/ovh-vps-stock-notifier.git](https://github.com/djshylow/ovh-vps-stock-notifier.git)
-cd ovh-vps-stock-notifier
-Install Dependencies:
+
+###3. Run
+Open your terminal in the folder and run:
 
 Bash
 
-npm install axios
-Configure the script:
-Open ovh-monitor.js and fill in your credentials:
+> `npm install axios
+node ovh-monitor.js`
+Checks every 10 mins. Pings 5 times when stock is found.
 
-JavaScript
 
-const TELEGRAM_TOKEN = "your_bot_token_here";
-const CHAT_ID = "your_chat_id_here";
-4. Run the Monitor
-Bash
+### Why this is better:
+* **No Git commands:** It assumes they just downloaded your file.
+* **Code Blocks:** Using the \` \` \` symbols makes the commands look like real buttons/boxes instead of a mess.
+* **Direct:** It tells them exactly where to paste the keys.
 
-node ovh-monitor.js
-The script checks the OVH API every 10 minutes. If a Singapore VPS is found, it will ping you 5 times with a 30-second delay.
+**Would you like me to make a `package.json` file for you?** It lets people just ty
